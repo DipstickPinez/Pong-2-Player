@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>up = vk_up;
 down = vk_down;
+ydir = 8
 </string>
           </argument>
         </arguments>
@@ -50,11 +51,17 @@ down = vk_down;
           <argument>
             <kind>1</kind>
             <string>if keyboard_check(up) {
-    y -= 10;
+ydir = -8
 } else if keyboard_check(down) {
-    y += 10;
+ydir = 8
+}
+if not place_meeting (x, y + ydir, obj_wall) {
+if keyboard_check(up) {
+y += ydir;
+} else if keyboard_check(down) {
+y += ydir;
 } 
-
+}
 
 </string>
           </argument>

@@ -4,13 +4,14 @@
   <width>384</width>
   <height>352</height>
   <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>randomize();
+texture_set_interpolation(false);
 global.score1 = 0
 global.score2 = 0</code>
   <enableViews>0</enableViews>
@@ -99,6 +100,7 @@ global.score2 = 0</code>
     <instance objName="obj_wall_score2" x="352" y="272" name="inst_FA122CDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_score2" x="352" y="320" name="inst_216095D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_score2" x="352" y="304" name="inst_79FCA8E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_scoreDisplay" x="160" y="208" name="inst_32FB8F61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -25,10 +25,42 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xdir = 8;
+            <string>xdir = 10;
 ydir = 0;
 alarm_set(0, -1);
 alarm_set(1, -1);
+alarm_set(2, -1);
+count = "";
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if count &gt; 0 {
+    count--;
+    alarm_set(2, room_speed);
+} else if count == 0 {
+count = "";
+alarm_set(2,-1);
+}
 
 </string>
           </argument>
@@ -53,9 +85,8 @@ alarm_set(1, -1);
           <argument>
             <kind>1</kind>
             <string>
-xdir = choose(8,-8);
+xdir = choose(10,-10);
 ydir = 0;
-
 alarm_set(1, -1);
 </string>
           </argument>
@@ -143,6 +174,7 @@ y += ydir;
           <argument>
             <kind>1</kind>
             <string>alarm_set(1, room_speed * 3);
+alarm_set(1, room_speed * 3);
 x = xstart;
 y = ystart;
 xdir = 0
@@ -171,11 +203,36 @@ global.score2++
           <argument>
             <kind>1</kind>
             <string>alarm_set(1, room_speed * 3);
+alarm_set(2, room_speed * 3);
 x = xstart;
 y = ystart;
 xdir = 0
 ydir = 0
 global.score1++
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_text_transformed(180, 100, count, 2.5, 2.5, image_angle);
 </string>
           </argument>
         </arguments>

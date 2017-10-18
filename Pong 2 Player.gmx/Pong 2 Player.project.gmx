@@ -15,6 +15,11 @@
     <sprite>sprites\sprt_two</sprite>
     <sprite>sprites\sprt_three</sprite>
     <sprite>sprites\sprt_four</sprite>
+    <sprite>sprites\sprt_five</sprite>
+    <sprite>sprites\sprt_six</sprite>
+    <sprite>sprites\sprt_seven</sprite>
+    <sprite>sprites\sprt_eight</sprite>
+    <sprite>sprites\sprt_nine</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -23,12 +28,18 @@
     <object>objects\obj_reflector1</object>
     <object>objects\obj_reflector2</object>
     <object>objects\obj_wall</object>
-    <object>objects\obj_wall_score2</object>
     <object>objects\obj_wall_score</object>
+    <object>objects\obj_wall_score2</object>
     <object>objects\obj_one</object>
     <object>objects\obj_two</object>
     <object>objects\obj_three</object>
     <object>objects\obj_four</object>
+    <object>objects\obj_five</object>
+    <object>objects\obj_six</object>
+    <object>objects\obj_seven</object>
+    <object>objects\obj_eight</object>
+    <object>objects\obj_nine</object>
+    <object>objects\obj_scoreDisplay</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
