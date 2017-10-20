@@ -174,12 +174,13 @@ y += ydir;
           <argument>
             <kind>1</kind>
             <string>alarm_set(1, room_speed * 3);
-alarm_set(1, room_speed * 3);
+alarm_set(2, room_speed);
 x = xstart;
 y = ystart;
 xdir = 0
 ydir = 0
 global.score2++
+count=3
 </string>
           </argument>
         </arguments>
@@ -203,12 +204,14 @@ global.score2++
           <argument>
             <kind>1</kind>
             <string>alarm_set(1, room_speed * 3);
-alarm_set(2, room_speed * 3);
+alarm_set(2, room_speed);
 x = xstart;
 y = ystart;
 xdir = 0
 ydir = 0
 global.score1++
+count=3
+
 </string>
           </argument>
         </arguments>
